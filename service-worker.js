@@ -1,8 +1,8 @@
 const CACHE_NAME = 'wushu-tracker-v1';
 const urlsToCache = [
-  './wushu_workout_tracker.html',
-  './manifest.json'
-];
+     './wushu_workout_tracker.html',
+     './manifest.json'
+   ];
 
 // Install event - cache files
 self.addEventListener('install', event => {
