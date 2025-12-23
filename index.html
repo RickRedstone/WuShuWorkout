@@ -629,12 +629,8 @@
             updateProgressBars();
             initSessionSelector();
             
-            // Register Service Worker for PWA
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('./service-worker.js')
-                    .then(reg => console.log('Service Worker registered:', reg))
-                    .catch(err => console.log('Service Worker registration failed:', err));
-            }
+            // Service Worker disabled for debugging
+            // Enable later when everything works
         });
 
         function initSessionSelector() {
